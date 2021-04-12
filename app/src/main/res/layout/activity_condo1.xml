@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--https://www.realtor.ca/real-estate/22838444/2905-5162-yonge-st-toronto-willowdale-west-->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal"
+    tools:context=".CondominiumDetails.Condo1">
+
+
+    <Button
+
+        android:id="@+id/btn_previous"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="300dp"
+        android:text="previous"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+
+        android:id="@+id/btn_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="320dp"
+        android:text="next"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+    <ViewFlipper
+        android:id="@+id/vf"
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+
+            android:id="@+id/iv_main"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:background="@drawable/condo1"
+            android:scaleType="center" />
+        <ImageView
+            android:id="@+id/iv_1"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:background="@drawable/condo1detail1"
+            android:scaleType="center" />
+
+        <ImageView
+
+            android:id="@+id/iv_2"
+            android:background="@drawable/condo1detail2"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:scaleType="center"/>
+
+        <ImageView
+
+            android:id="@+id/iv_3"
+            android:background="@drawable/condo1detail3"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:scaleType="centerCrop"/>
+
+        <ImageView
+
+            android:id="@+id/iv_4"
+            android:background="@drawable/condo1detail4"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:scaleType="center"/>
+
+
+
+
+    </ViewFlipper>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="400dp"
+        android:layout_marginBottom="0dp"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:text="$2,500/Monthly\n#2905 -5162 YONGE ST\nToronto, Ontario M2N0E9"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="400dp"
+        android:layout_marginBottom="0dp"
+        android:textSize="14dp"
+        android:text="\n\n\n\nDescription:\n
+    \nLuxury Menkes Gibson Sq South Tower. Great Prime Location! Corner Unit With 2 Separate Bedrooms 2 Full Bath.
+    Freshly Paint. Spectacular North View, Spacious \u0026 Bright Unit In The Building. Direct Access To Subway, Library, Loblaws And Indoor Shopping Mall, Etc. Modern Kitchen W/Granite Counters, Floor To Ceiling Windows, Laminate Floor.
+    Steps To Mel Lastman Sq, North York Centre, Park, Restaurants, And Banks.**** EXTRAS **** Existing Appliances Includes Fridge, Stove, Microwave, Dishwasher, Washer And Dryer. All Electric Light Fixtures, Window Coverings, One Parking Spot And One Large Locker At 5th Floor Included.
+    No Pets And No Smoking. (27960538)"/>
+
+
+</RelativeLayout>

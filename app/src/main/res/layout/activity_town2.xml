@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--https://www.zumper.com/apartments-for-rent/2305161p/3-bedroom-saint-james-town-toronto-on?source=trovit_can_all&utm_source=Trovit&utm_medium=CPC&utm_campaign=ca_trovit_all_toronto-on-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal"
+    tools:context=".TownDetails.Town1">
+
+
+    <Button
+
+        android:id="@+id/btn_previous"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="300dp"
+        android:text="previous"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+
+        android:id="@+id/btn_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="320dp"
+        android:text="next"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+    <ViewFlipper
+        android:id="@+id/vf"
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+
+            android:id="@+id/iv_main"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:background="@drawable/town2"
+            android:scaleType="center" />
+
+        <ImageView
+            android:id="@+id/iv_1"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:background="@drawable/town2detail1"
+            android:scaleType="center" />
+
+        <ImageView
+
+            android:id="@+id/iv_2"
+            android:background="@drawable/town2detail2"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:scaleType="center"/>
+
+        <ImageView
+
+            android:id="@+id/iv_3"
+            android:background="@drawable/town2detail3"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:scaleType="centerCrop"/>
+
+
+    </ViewFlipper>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="400dp"
+        android:layout_marginBottom="0dp"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:text="$3,050/Monthly\n306 Bleecker Street\nToronto, ON M4X 1M2, Canada"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="400dp"
+        android:layout_marginBottom="0dp"
+        android:textSize="14dp"
+        android:text="\n\n\n\nDescription:\n
+    \nThis 3 Storey Townhouse Suite Is Approx. 1,100 Sf \u0026 Features A Welcoming Open Floor Plan Living/Dining Area That Offers Plenty Of Natural Light. Amazing Finishes Throughout.
+    Contemporary Style Kitchen Is Equipped W/Beautiful Countertops And Backsplash, Breakfast Bar \u0026 Pantry. 2nd Floor Private Master Suite With W/I Closet. Good Size 2nd \u0026 3rd Bedrooms. Access To An Array Of Amenities At 561 Sherbourne.
+    Includes: Fridge, Stove, Dishwasher, Washer \u0026 Dryer"/>
+
+
+</RelativeLayout>

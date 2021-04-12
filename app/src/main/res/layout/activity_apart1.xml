@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--https://www.torontorentals.com/toronto/apartments?active-listing-id=116134-->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal"
+    tools:context=".ApartmentDetails.Apart1">
+
+
+    <Button
+
+        android:id="@+id/btn_previous"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="300dp"
+        android:text="previous"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+
+        android:id="@+id/btn_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="320dp"
+        android:text="next"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+    <ViewFlipper
+        android:id="@+id/vf"
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+
+            android:id="@+id/iv_main"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:background="@drawable/apart1"
+            android:scaleType="center" />
+<ImageView
+        android:id="@+id/iv_1"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:background="@drawable/apart1detail1"
+        android:scaleType="center" />
+
+        <ImageView
+
+            android:id="@+id/iv_2"
+            android:background="@drawable/apart1detail2"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:scaleType="center"/>
+
+        <ImageView
+
+            android:id="@+id/iv_3"
+            android:background="@drawable/apart1detail3"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:scaleType="centerCrop"/>
+
+
+
+
+    </ViewFlipper>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="400dp"
+        android:layout_marginBottom="0dp"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:text="$1,750/Monthly\n1 Newholm Road\nEtobicoke, ON , M8Y 3M3"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="400dp"
+        android:layout_marginBottom="0dp"
+        android:textSize="14dp"
+        android:text="\n\n\n\nDescription:\n
+    \nFULLY RENOVATED Clean and Quiet 2 bedroom  Unit in Prime Prince Edward and Bloor area.
+    \nTop floor with balcony
+
+\nVery Spacious
+
+\nHardwood Floors Throughout
+
+\nSunshine Filled Bright Unit
+
+\nGarage Parking Available
+
+\nLaundry On Site
+
+\nStorage available
+
+
+\n\nClose to All Amenities Shops and Restaurants
+
+\nWalking Distance to Bus, Streetcar and close to Old Mill Subway
+"/>
+
+
+</RelativeLayout>

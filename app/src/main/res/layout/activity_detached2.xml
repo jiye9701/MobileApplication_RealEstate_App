@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--https://www.zumper.com/apartments-for-rent/617081p/2-bedroom-the-annex-toronto-on?source=trovit_can_featured&utm_source=Trovit&utm_medium=CPC&utm_campaign=ca_trovit_featured_all-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal"
+    tools:context=".DetacedHomeDetails.Detached2">
+
+
+    <Button
+
+        android:id="@+id/btn_previous"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="300dp"
+        android:text="previous"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+
+        android:id="@+id/btn_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="320dp"
+        android:text="next"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+    <ViewFlipper
+        android:id="@+id/vf"
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+
+            android:id="@+id/iv_main"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:background="@drawable/detached2"
+            android:scaleType="center" />
+
+        <ImageView
+        android:id="@+id/iv_1"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:background="@drawable/detached2detail1"
+        android:scaleType="center" />
+
+        <ImageView
+
+            android:id="@+id/iv_2"
+            android:background="@drawable/detached2detail2"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:scaleType="center"/>
+
+        <ImageView
+
+            android:id="@+id/iv_3"
+            android:background="@drawable/detached2detail3"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:scaleType="centerCrop"/>
+
+
+
+
+    </ViewFlipper>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="400dp"
+        android:layout_marginBottom="0dp"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:text="$2,600/Monthly\n55 Spadina Rd\nToronto, ON M5R 2T1"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="400dp"
+        android:layout_marginBottom="0dp"
+        android:textSize="14dp"
+        android:text="\n\n\n\nDescription:\n
+    \nSpacious Two Bedroom Apartment in The Annex Little Italy
+Beautiful 2 bedroom 2 bathroom unit in large fully detached house in The Annex
+Spacious unit with approximately 900 square feet of living space, hardwood floors, fireplace, updated kitchen/bathroom
+Perfect location in the heart of The Annex near Bloor St, Yorkville, restaurants, shops and more!"/>
+
+
+</RelativeLayout>

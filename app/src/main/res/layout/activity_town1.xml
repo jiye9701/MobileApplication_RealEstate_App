@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--https://www.zumper.com/apartments-for-rent/2815482p/3-bedroom-riverdale-toronto-on?source=trovit_can_all&utm_source=Trovit&utm_medium=CPC&utm_campaign=ca_trovit_all_toronto-on-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal"
+    tools:context=".TownDetails.Town1">
+
+
+    <Button
+
+        android:id="@+id/btn_previous"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="300dp"
+        android:text="previous"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+
+        android:id="@+id/btn_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="320dp"
+        android:text="next"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+    <ViewFlipper
+        android:id="@+id/vf"
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+
+            android:id="@+id/iv_main"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:background="@drawable/town1"
+            android:scaleType="center" />
+
+        <ImageView
+            android:id="@+id/iv_1"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:background="@drawable/town1detail1"
+            android:scaleType="center" />
+
+        <ImageView
+
+            android:id="@+id/iv_2"
+            android:background="@drawable/town1detail2"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:scaleType="center"/>
+
+        <ImageView
+
+            android:id="@+id/iv_3"
+            android:background="@drawable/town1detail3"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:scaleType="centerCrop"/>
+
+        <ImageView
+
+            android:id="@+id/iv_4"
+            android:background="@drawable/town1detail4"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:scaleType="centerCrop"/>
+
+        <ImageView
+
+            android:id="@+id/iv_5"
+            android:background="@drawable/town1detail5"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:scaleType="centerCrop"/>
+        <ImageView
+
+            android:id="@+id/iv_6"
+            android:background="@drawable/town1detail6"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:scaleType="centerCrop"/>
+        <ImageView
+
+            android:id="@+id/iv_7"
+            android:background="@drawable/town1detail7"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:scaleType="centerCrop"/>
+
+        <ImageView
+
+            android:id="@+id/iv_8"
+            android:background="@drawable/town1detail8"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:scaleType="centerCrop"/>
+
+
+    </ViewFlipper>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="400dp"
+        android:layout_marginBottom="0dp"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:text="$4,250/Monthly\n950 Dundas Street East #30003\nToronto, ON M4M 1R3, Canada"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="400dp"
+        android:layout_marginBottom="0dp"
+        android:textSize="14dp"
+        android:text="\n\n\n\nDescription:\n
+    \nExcellent Value For New End Unit, Luxurious Town House In The High Demand Area Of South Riverdale. 3 Bedrooms, 3 Washrooms, Private Rooftop Terrace Showing Spectacular View Of The City Skyline Beside Two Balconies. Open Concept Layout, Spacious Living Area, Modern Finishes, Gorgeous Modern Kitchen. Parking For 3 Cars
+
+\nEXTRAS
+\nAppliances, Window Coverings, Light Fixtures."/>
+
+
+</RelativeLayout>

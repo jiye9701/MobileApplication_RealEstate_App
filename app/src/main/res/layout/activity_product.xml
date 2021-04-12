@@ -1,0 +1,21 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:alpha="0.5"
+    android:background="@drawable/main_background"
+    >
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Choose the home type by using the option menu control: "
+        android:textSize="50dp"
+        android:gravity="center"
+        android:textColor="@color/black"/>
+
+
+
+</LinearLayout>

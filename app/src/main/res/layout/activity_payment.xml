@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context=".PaymentActivity">
+
+
+    <EditText
+        android:id="@+id/editname"
+        android:layout_width="416dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="132dp"
+        android:hint="Please Enter your Name"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <com.androidwidgets.formatedittext.widgets.FormatEditText
+        android:id="@+id/edittext1"
+        android:layout_width="417dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="292dp"
+        android:layout_marginEnd="16dp"
+        android:hint="Please Enter your Card Number"
+        android:imeOptions="actionSend"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="423dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="2dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/radioGroup"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RadioButton
+            android:id="@+id/radioButton1"
+            android:layout_width="85dp"
+            android:layout_height="match_parent"
+
+            android:text="Cash"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/radioGroup" />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="82dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="67dp"
+            android:text="Credit"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/radioGroup" />
+
+        <RadioButton
+            android:id="@+id/radioButton3"
+            android:layout_width="88dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="90dp"
+            android:text="Debit"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnpayment"
+        android:layout_width="412dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="548dp"
+        android:onClick="onClickPayment"
+        android:text="Process Payment"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/editDate"
+        android:layout_width="147dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="384dp"
+        android:ems="10"
+        android:hint="MM/YY"
+        android:inputType="date"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/editCVC"
+        android:layout_width="164dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="380dp"
+        android:hint="CVV/CVC"
+        android:inputType="number"
+        android:maxLength="3"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.992"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/editEmail"
+        android:layout_width="414dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="208dp"
+        android:ems="10"
+        android:hint="example@email.com"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

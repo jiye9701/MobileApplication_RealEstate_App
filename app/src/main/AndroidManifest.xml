@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.jiyeyu_comp304lab2">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Jiye's Estate"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.JiyeYu_COMP304Lab2">
+        <activity android:name=".TownDetails.Town2"></activity>
+        <activity android:name=".TownDetails.Town1" />
+        <activity android:name=".SemiDetachedDetails.Semidetached3" />
+        <activity android:name=".SemiDetachedDetails.Semidetached2" />
+        <activity android:name=".SemiDetachedDetails.Semidetached1" />
+        <activity android:name=".DetacedHomeDetails.Detached2" />
+        <activity android:name=".DetacedHomeDetails.Detached1" />
+        <activity android:name=".ApartmentDetails.Apart3" />
+        <activity android:name=".ApartmentDetails.Apart2" />
+        <activity android:name=".ApartmentDetails.Apart1"
+            android:logo = "@drawable/logo"/>
+        <activity android:name=".CondominiumDetails.Condo1" />
+        <activity android:name=".CondominiumDetails.Condo4" />
+        <activity android:name=".CondominiumDetails.Condo3" />
+        <activity android:name=".CondominiumDetails.Condo2" />
+        <activity android:name=".PaymentActivity" />
+        <activity android:name=".ProductDetails.TownHouse" />
+        <activity android:name=".ProductDetails.Condominium" />
+        <activity android:name=".ProductDetails.SemiDetachedHome" />
+        <activity android:name=".ProductDetails.DetachedHome" />
+        <activity android:name=".ProductDetails.Apartment" />
+        <activity android:name=".ProductActivity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--https://www.zumper.com/apartments-for-rent/9704959p/4-bedroom-seaton-village-toronto-on?source=trovit_can_all&utm_source=Trovit&utm_medium=CPC&utm_campaign=ca_trovit_all_toronto-on-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal"
+    tools:context=".SemiDetachedDetails.Semidetached3">
+
+
+    <Button
+
+        android:id="@+id/btn_previous"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="300dp"
+        android:text="previous"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+
+        android:id="@+id/btn_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="320dp"
+        android:text="next"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+    <ViewFlipper
+        android:id="@+id/vf"
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+
+            android:id="@+id/iv_main"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:background="@drawable/semidetached3"
+            android:scaleType="center" />
+        <ImageView
+            android:id="@+id/iv_1"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:background="@drawable/semidetached3detail1"
+            android:scaleType="center" />
+
+        <ImageView
+
+            android:id="@+id/iv_2"
+            android:background="@drawable/semidetached3detail2"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:scaleType="center"/>
+
+        <ImageView
+
+            android:id="@+id/iv_3"
+            android:background="@drawable/semidetached3detail3"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:scaleType="centerCrop"/>
+
+        <ImageView
+
+            android:id="@+id/iv_4"
+            android:background="@drawable/semidetached3detail4"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:scaleType="centerCrop"/>
+
+        <ImageView
+
+            android:id="@+id/iv_5"
+            android:background="@drawable/semidetached3detail5"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:scaleType="centerCrop"/>
+
+
+
+    </ViewFlipper>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="400dp"
+        android:layout_marginBottom="0dp"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:text="$3,900/Monthly\n783 Euclid Avenue\nToronto, ON M6G 2V3, CA"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="400dp"
+        android:layout_marginBottom="0dp"
+        android:textSize="14dp"
+        android:text="\n\n\n\nDescription:\n
+    \nIdeal Seaton Village Location(Bloor/Bathurst), Semi-Detached 2-1/2 Story 4 Bedroom + Den Home For Single Family, Open Concept Main Floor (Hardwood Floor), 2nd Floor With Large Balcony, Spacious Bedrooms, Near Bloor Subway, Palmerston School, Vermont Park, Shops \u0026 Restaurants.
+
+\n\nMy services are absolutely free to you
+
+\n\nSubmit your email and I'll get back to you as soon as possible
+
+\n\nLandlord will only consider a tenant with good income and credit score"/>
+
+</RelativeLayout>

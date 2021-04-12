@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Jiye\&apos;s Estate</string>
+    <string name="message"> Choose the house type by using the menu</string>
+    <string name="apartment">Apartment</string>
+    <string name="detachedHome">Detached Home</string>
+    <string name="semiDetachedHome">Semi-detached Home</string>
+    <string name="condominium">Condominium</string>
+    <string name="townHouse">Town House</string>
+
+    <string-array name="available_houses">
+        <!--condo-->
+        <item>Apartment</item>
+        <item>Condominium</item>
+        <item>Detached Home</item>
+        <item>Semi-Detached Home</item>
+        <item>Town House</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

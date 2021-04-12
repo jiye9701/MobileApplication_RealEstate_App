@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--https://www.realtor.ca/real-estate/22611961/2505-56-forest-manor-rd-toronto-henry-farm-->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal"
+    tools:context=".CondominiumDetails.Condo3">
+
+
+    <Button
+
+        android:id="@+id/btn_previous"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="300dp"
+        android:text="previous"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+
+        android:id="@+id/btn_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="320dp"
+        android:text="next"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ViewFlipper
+        android:id="@+id/vf"
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+
+            android:id="@+id/iv_main"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:background="@drawable/condo3"
+            android:scaleType="center" />
+        <ImageView
+
+        android:id="@+id/iv_1"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:background="@drawable/condo3detail1"
+        android:scaleType="center" />
+
+        <ImageView
+
+            android:id="@+id/iv_2"
+            android:background="@drawable/condo3detail2"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:scaleType="center"/>
+
+        <ImageView
+
+            android:id="@+id/iv_3"
+            android:background="@drawable/condo3detail3"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:scaleType="centerCrop"/>
+
+        <ImageView
+
+            android:id="@+id/iv_4"
+            android:background="@drawable/condo3detail4"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:scaleType="center"/>
+
+
+
+
+    </ViewFlipper>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="400dp"
+        android:layout_marginBottom="0dp"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:text="$2,000/Monthly\n#2505 -56 FOREST MANOR RD\nToronto, Ontario M2J1M6"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="400dp"
+        android:layout_marginBottom="0dp"
+        android:textSize="14dp"
+        android:text="\n\n\n\nDescription:\n
+    \nOne Year New 1 Bedroom+ Flex + Two Bathrooms+ Balcony. High Floor Facing Unobstructed View To The West. 9Ft Ceilings. Flex Can Be Used As Second Bedroom Wi Sliding Door.
+    Great Location With A Lot Of Amenities: Gym, Yoga Room, Scandinavian Spa With Plunge Pools, Heated Stone Bed, Lounge, Out Door Terrace, Concierge.
+    Easy Access To Hwy 404 u0026 401, Subway u0026 Ttc. Walking Distance To Fairview Mall, Schools, Parks, Performing Centre For The Arts, Libraryu0026 More.**** EXTRAS **** S/S Kitchen Appliances Include Stove, Fridge, Microwave W/Hood Fan. Stacked Washer u0026 Dryer, One Parking One Locker. Tenant Pays Utilities As Per Consumption.
+    No Pets. No Smoking In Unit. (27608301)"/>
+
+
+</RelativeLayout>

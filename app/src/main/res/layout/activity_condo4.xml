@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--https://www.realtor.ca/real-estate/22799952/3106-12-york-st-toronto-waterfront-communities-c1-->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal"
+    tools:context=".CondominiumDetails.Condo4">
+
+
+    <Button
+
+        android:id="@+id/btn_previous"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="300dp"
+        android:text="previous"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+
+        android:id="@+id/btn_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="320dp"
+        android:text="next"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ViewFlipper
+        android:id="@+id/vf"
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+
+            android:id="@+id/iv_main"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:background="@drawable/condo4"
+            android:scaleType="center" />
+
+        <ImageView
+        android:id="@+id/iv_1"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:background="@drawable/condo4detail1"
+        android:scaleType="center" />
+
+        <ImageView
+
+            android:id="@+id/iv_2"
+            android:background="@drawable/condo4detail2"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:scaleType="center"/>
+
+        <ImageView
+
+            android:id="@+id/iv_3"
+            android:background="@drawable/condo4detail3"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:scaleType="centerCrop"/>
+
+        <ImageView
+
+            android:id="@+id/iv_4"
+            android:background="@drawable/condo4detail4"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:scaleType="center"/>
+
+
+
+
+    </ViewFlipper>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="400dp"
+        android:layout_marginBottom="0dp"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:text="$1,800/Monthly\n#3106 -12 YORK ST\nToronto, Ontario M5J0A9"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="400dp"
+        android:layout_marginBottom="0dp"
+        android:textSize="14dp"
+        android:text="\n\n\n\nDescription:\n
+    \nVery Convenient Downtown Location, West Exposure With Magnificent Lake \u0026 City Views, Cozy Open Concept Layout, One Bedroom Plus A Functional Study, Floor To Ceiling Windows, Amazing Building Amenities, Short Walking Distance To Harbor Front, Union Station, Air Canada Center, Rogers Centre, Cn Tower, Maple Leaf Square, Underground Path System, Restaurants, Banks, Supermarkets,**** EXTRAS **** Existing S/S Fridge, Stove, Range Hood, Microwave, Dishwasher, All Electric Light Fixtures, Window Coverings, 24/7 Concierge, Indoor Pool, Hot Tub, Gym Room, Outdoor Terrace With Bbq, (27909129)"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,39 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <CheckBox
+        android:id="@+id/checkBoxApart1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableRight="@drawable/apart1"
+        android:onClick="onCheckboxClicked"
+        android:text="1 Newholm Road" />
+
+    <CheckBox
+        android:id="@+id/checkBoxApart2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableRight="@drawable/apart2"
+        android:onClick="onCheckboxClicked"
+        android:text="63, 73 \u0026 120 Widdicombe Hill Blvd" />
+
+    <CheckBox
+        android:id="@+id/checkBoxApart3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableRight="@drawable/apart3"
+        android:onClick="onCheckboxClicked"
+        android:text="110 Jameson Ave" />
+
+
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onClickNext"
+        android:text="Check Out"
+        android:layout_marginTop="50dp"/>
+</LinearLayout>
